@@ -1,0 +1,2 @@
+<!--pages/main/main.wxml-->
+<map latitude='{{latitude}}' longitude='{{longitude}}' scale='16' controls='{{controls}}' show-location id="mayMap" bindcontroltap='bindcontroltap'></map>

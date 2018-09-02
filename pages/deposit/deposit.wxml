@@ -1,0 +1,12 @@
+<!--pages/deposit/deposit.wxml-->
+<view class='wrapper'>
+<view class='number_wrapper'>当前车辆编号： {{number}}</view>
+<view class='ride_time_wrapper'>
+<text>{{discrible}}</text>
+<view class='ride_time'>{{hours}}:{{minutes}}:{{seconds}}</view>
+</view>
+<view class='btn_wrapper'>
+<button type="warn" class='end_ride' disabled='{{disable}}' bindtap='endride'>结束计费</button>
+<button type='primary' class='back_map' bindtap='backmap'>返回首页</button>
+</view>
+</view>

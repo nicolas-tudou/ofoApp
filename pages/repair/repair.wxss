@@ -1,0 +1,89 @@
+/* pages/repair/repair.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.choose_container .choose_title {
+  padding: 20rpx 0 20rpx 30rpx;
+  font-size: 28rpx;
+  color: #ccc;
+}
+
+.choose_container checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20rpx 20rpx 20rpx 30rpx;
+  background-color: #fff;
+}
+
+.choose_container .choose_items checkbox {
+  width: 35%;
+  border: 1rpx dotted green;
+  border-radius: 10rpx;
+  margin: 20rpx;
+  padding: 20rpx;
+  font-size: 35rpx;
+}
+
+.edit_info .pics_title {
+  padding: 20rpx 0 20rpx 30rpx;
+  font-size: 28rpx;
+  color: #ccc;
+}
+
+.edit_info .pics_container {
+  padding: 20rpx 20rpx 20rpx 30rpx;
+  background-color: #fff;
+}
+
+.pics_container image {
+  width: 120rpx;
+  height: 120rpx;
+  position: relative;
+  overflow: visible;
+  margin-right: 30rpx;
+  vertical-align: top;
+}
+
+.pics_container image icon {
+  position: absolute;
+  top: -20rpx;
+  right: -20rpx;
+}
+
+.pics_container .add_pic {
+  display: inline-block;
+  width: 120rpx;
+  height: 120rpx;
+  border: 1rpx solid #f2f2f2;
+  color: #ccc;
+  font-size: 25rpx;
+  text-align: center;
+  line-height: 120rpx;
+}
+
+.dsec_container {
+  margin-top: 20rpx;
+  background-color: #fff;
+}
+
+.dsec_container input {
+  margin-left: 30rpx;
+  padding: 20rpx 20rpx 0 0;
+  width: 80%;
+}
+
+.dsec_container .number {
+  border-bottom: 2rpx solid #f2f2f2;
+}
+
+.submit_btn input {
+  font-size: 10rpx;
+  border: 1rpx solid red;
+}

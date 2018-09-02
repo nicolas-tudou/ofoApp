@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/repair/repair",
+    "pages/useofo/useofo",
+    "pages/deposit/deposit",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ccc",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "ofo 共享单车",
+    "backgroundColor": "#000",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  },
+  "debug": true
+}

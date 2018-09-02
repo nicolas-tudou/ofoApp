@@ -1,0 +1,15 @@
+<!--pages/useofo/useofo.wxml-->
+<view class='wrapper'>
+<view class='number'>
+车牌号码：{{number}}
+</view>
+<view class='password_wrapper'>
+车辆密码：
+<view class='password'>{{password}}</view>
+</view>
+<view class='tips_wrapper'>
+<view>
+</view>请使用密码解锁，{{time}}秒后开始计费，
+<view class='tips_reason'>车辆有问题？<text class='tips_opration' bindtap='moveToRepir'>去报修</text></view>
+</view>
+</view>

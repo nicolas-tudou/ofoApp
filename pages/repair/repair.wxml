@@ -1,0 +1,31 @@
+<!--pages/repair/repair.wxml-->
+<view class='container'>
+  <view class='choose_container'>
+    <view class='choose_title'>请选择报修类型</view>
+    <view class='choose_items'>
+      <checkbox-group bindchange="chooseRepirType">
+        <block wx:for="{{repairItems}}" wx:key="{{index}}">
+          <checkbox value='{{item.index}}'>{{item.index}}:{{item.title}}</checkbox>
+        </block>
+      </checkbox-group>
+    </view>
+  </view>
+  <view class='edit_info'>
+    <view class='pics_title'>请拍摄周边环境，便于修车师傅找车</view>
+    <view class='pics_container'>
+      <block wx:for="{{picsUrls}}" wx:key="{{index}}">
+        <image src='{{item}}'>
+          <icon type='cancel' size='18' color='red' bindtap='delPic' data-index="{{index}}"></icon>
+        </image>
+      </block>
+      <text class='add_pic' bindtap='addPic'>{{addPicMassage}}</text>
+    </view>
+    <view class='dsec_container'>
+      <input class='number' name="number" placeholder='车牌号（车牌损坏不用填）' bindconfirm='inputNumber'></input>
+      <input class='dsec' name="dsec" placeholder='备注' bindconfirm='inputDsec'></input>
+    </view>
+  </view>
+  <view class='submit_btn'>
+    <button type='{{submitBtnType}}' bindtap='submitRpair'>提交</button>
+  </view>
+</view>

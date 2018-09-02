@@ -1,0 +1,30 @@
+/* pages/useofo/useofo.wxss */
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.number, .tips_wrapper {
+  flex: 1;
+  width: 100%;
+  text-align: center;
+  padding: 60rpx 0;
+}
+
+.password_wrapper {
+  flex: 8;
+  text-align: center;
+}
+
+.password {
+  font-size: 160rpx;
+  font-weight: 600;
+}
+
+.tips_opration {
+  color: green;
+}
